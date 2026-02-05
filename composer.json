@@ -32,6 +32,12 @@
         }
     },
     "scripts": {
+        "post-install-notes": [
+            "@php -r \"echo 'Composer dependencies installed. Next: run php artisan key:generate (and configure .env as needed).'.PHP_EOL;\""
+        ],
+        "install-app": [
+            "composer install --no-interaction"
+        ],
         "setup": [
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",

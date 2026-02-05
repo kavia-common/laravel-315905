@@ -24,6 +24,33 @@ php artisan key:generate
 PORT=3001 composer run start
 ```
 
+## Static preview with Five Server
+
+This repository includes a `static/` folder intended for **static-only** previews (no PHP/Blade rendering) using the VS Code **Five Server** extension.
+
+### How to start
+
+1) Install the VS Code extension: **Five Server**  
+2) In VS Code, start Five Server via:
+- Command Palette: `Five Server: Start`, or
+- the **Go Live** button (if available)
+
+Five Server will serve `static/` at:
+
+- http://localhost:5500 (opens `static/index.html`)
+
+### Laravel app (dynamic)
+
+Laravel routes/controllers require running the Laravel server separately:
+
+```bash
+PORT=3001 composer run start
+```
+
+Then visit:
+
+- http://localhost:3001
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

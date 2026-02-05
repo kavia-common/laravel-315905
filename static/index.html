@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Static Preview (Five Server)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Static-only preview</h1>
+        <p class="subtitle">
+          This folder is served by the VS Code <strong>Five Server</strong> extension and intentionally contains
+          <strong>no PHP/Blade</strong>.
+        </p>
+      </header>
+
+      <section class="card">
+        <h2>What is this?</h2>
+        <p>
+          Use <code>/static</code> for quick prototypes, HTML/CSS experiments, and static asset previews without running
+          Laravel.
+        </p>
+        <ul>
+          <li>No PHP execution</li>
+          <li>No Blade rendering</li>
+          <li>Ideal for static mockups and quick UI iterations</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Need the real Laravel app?</h2>
+        <p>
+          Start Laravel separately (example):
+        </p>
+        <pre><code>PORT=3001 composer run start</code></pre>
+        <p>
+          Then open the Laravel app at:
+          <a href="http://localhost:3001" target="_blank" rel="noreferrer">http://localhost:3001</a>
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Served by Five Server at
+          <a href="http://localhost:5500" target="_blank" rel="noreferrer">http://localhost:5500</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

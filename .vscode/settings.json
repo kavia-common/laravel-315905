@@ -1,0 +1,15 @@
+{
+  "fiveServer.root": "static",
+  "fiveServer.port": 5500,
+  "fiveServer.open": "index.html",
+  "fiveServer.ignore": [
+    "vendor",
+    "storage",
+    "node_modules",
+    "bootstrap",
+    "public",
+    "resources",
+    "routes",
+    "app"
+  ]
+}
